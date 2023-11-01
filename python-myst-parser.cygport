@@ -1,0 +1,17 @@
+inherit python3-wheel
+
+NAME=python-myst-parser
+VERSION=2.0.0
+RELEASE=1
+CATEGORY=Python
+SUMMARY='An extended commonmark compliant parser'
+DESCRIPTION='MyST is a flavor of markdown that is designed for simplicity,
+flexibility, and extensibility.  The python-myst-parser package is the
+reference implementation of MyST Markdown.'
+HOMEPAGE=https://myst-parser.readthedocs.io
+LICENSE=MIT
+
+SRC_URI="https://github.com/executablebooks/MyST-Parser/archive/refs/tags/${PV}.tar.gz"
+BUILD_REQUIRES='python38-wheel python39-wheel'
+
+ARCH=noarch
